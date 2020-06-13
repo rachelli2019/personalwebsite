@@ -1,0 +1,42 @@
+.sectionDiv {
+    margin: 4rem 1rem; 
+    padding: 0rem 6rem;
+  }
+
+  h1 {
+   font-size: 4vmin;
+  }
+
+  @media(max-width: 576px){
+    .sectionDiv {
+      margin: 1rem auto; 
+      padding: 1rem 4rem;
+    }
+    .sectionDiv > h1::after {
+      width: 8rem;
+      margin: 0 0.5rem;
+      transform: translateY(-0.5rem);
+    }
+    h1 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 200%;
+    }
+  }
+  @media(max-width: 320px) {
+    h1 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 160%;
+    }
+  }
+
+h1::after {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid black;
+    width: 28%;
+    /* width: 20rem; */
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}

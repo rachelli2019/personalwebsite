@@ -1,0 +1,23 @@
+.MenuLink {
+    font-size: 24pt;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s linear;
+    font-family: Varela Round;
+}
+    
+@media (max-width:  576px) {
+  .MenuLink{
+      font-size: 1.5rem;
+      text-align: center;
+    }
+}
+
+.MenuLink:hover {
+  color: #0D3B66;
+  cursor: pointer;
+  }

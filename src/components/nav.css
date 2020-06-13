@@ -1,0 +1,33 @@
+.navLink {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.navText {
+    color: black;
+    background-image: none;
+    font-size: 100px;
+    /* font-size: 3vmin; GET THE FONT SIZE TO SCALEE */
+}
+
+.navText:hover {
+    color: #0D3B66;
+    cursor: pointer;
+}
+
+.title {
+    color: black;
+    display: inline;
+    position: absolute;
+    top: 1.5em;
+    left: 5%;
+    opacity: 0.8;
+    cursor: default;
+}
+
+.navRight {
+    list-style: none;
+    position: absolute;
+    top: 3em;
+    right: 5%;
+}

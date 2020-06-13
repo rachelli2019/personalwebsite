@@ -1,0 +1,183 @@
+/* https://reactjsexample.com/a-simple-react-timeline-component/ */
+
+.timelineContainer {
+  /* box-sizing: border-box; */
+  position: relative;
+  left: 5%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  padding-top: 3%
+}
+  
+.timeline{
+  max-width: 100%;
+  list-style: none;
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.timeline:before {
+  /* lines */
+  content:"";
+  position: absolute;
+  left: -16px; /* adjust manually */
+  top: 5px;
+  border-left: 1px solid black;
+  height: 100%;
+  width: 1px;
+}
+    
+.icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: black;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  top:0px;
+  left: -16px;
+  position: absolute;
+}
+
+.body{
+  padding: 2em 0em 0em 2em;
+  position: relative;
+  top: -2.2em;
+  width: 90%;
+}
+.event{
+  position: relative;
+}
+
+.expTitle {
+  font-size: 1.3em;
+  font-size: 3vh;
+  margin-top: 0em;
+  margin-top: 0.5em;
+  position: relative;
+}
+.expSubtitle {
+  font-size: 1.2em;
+  font-size: 2.8vh;
+  margin-top: 1em;
+  margin-bottom: -1.8em;
+  color: #0D3B66;
+  position: relative;
+}
+.date{
+  color: white;
+  background-color: black;
+  /* box-shadow: inset 0 0 0 0em #ef795a; */
+  display: inline-block;
+  margin-bottom: 0.5em;
+  padding: 0.25em 1em 0.2em 1em;
+  font-size: 2vh;
+}
+
+.description {
+  padding-bottom: -3em;
+  padding-top: 3em;
+  position: relative;
+  font-size: 2.3vh;
+}
+/* resume button styling */
+a {
+  background-image: none;
+  text-decoration: none;
+}
+.resumeContainer {
+  position: relative;
+  left: -6%;
+  text-align: center;
+}
+.resumeButton {
+  color: #0D3B66;
+  outline: 1px solid #0D3B66;
+  font-size: 2.3vmin;
+  /* font-weight: bold; */
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  font-family: Varela Round;
+}
+
+.resumeButton:hover {
+  color: white;
+  background-color: #0D3B66;
+}
+
+/* animations for bullet points */
+
+#block:hover ~ .icon{
+  background-color: #0D3B66;
+  animation: animateIcon 1s;
+}
+
+#block:hover .date{
+  background-color: #0D3B66;
+}
+
+@keyframes animateIcon {
+  0%{
+      /* opacity: 0.5; */
+      transform: rotate(45deg);
+  }
+  15%{
+      transform: rotate(90deg) scale(1.5,1.5);
+  }
+  25%{
+      /* opacity: 0.7; */
+      transform: rotate(500deg) scale(1.8,1.8);
+  }
+  50%{
+      /* opacity: 1; */
+      transform: rotate(1000deg) scale(2,2);
+  }
+  75%{
+      /* opacity: 0.7; */
+      transform: rotate(500deg)scale(1.8,1.8);
+  }
+  85%{
+    transform: rotate(90deg)scale(1.5,1.5);
+  }
+  100%{
+      /* opacity: 0.5; */
+      transform: rotate(45deg);
+  }
+}
+
+/* resizing fonts for mobile devices */
+@media(max-width: 576px) {
+  .expTitle {
+    font-size: 1.3em;
+  }
+  .expSubtitle {
+    font-size: 1.2em;
+  }
+  .description {
+    font-size: 1em;
+  }
+  .date {
+    font-size: 1em;
+  }
+  .timelineContainer {
+    left: 0;
+  }
+  .body{
+    padding: 2em 0em 0em 0.8em;
+    position: relative;
+    top: -2.2em;
+    width: 100%;
+    /* border: 4px solid pink; */
+  }
+  .resumeButton {
+    font-size: 1em;
+  }
+
+}
+@media(max-width: 320px) {
+  .date {
+    font-size: 90%;
+  }
+}
