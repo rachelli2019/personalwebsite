@@ -1,7 +1,7 @@
 // Menu.js
 import React from 'react';
 import { bool } from 'prop-types';
-import { StyledMenu } from './Menu.styled';
+import { StyledMenu } from './menu.styled';
 import { Link } from "react-scroll"
 import "./menu.css"
 
