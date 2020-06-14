@@ -6,6 +6,7 @@ import About from "../components/about"
 import Experience from "../components/experience"
 import Contact from "../components/contact"
 import { Helmet } from "react-helmet"
+import Footer from "../components/footer"
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         children={<Contact/>}
       />
        <Nav />
+       <Footer />
     </div>
   )
 }

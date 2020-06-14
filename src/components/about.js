@@ -55,6 +55,22 @@ const StyledPic = styled.div`
     }
 `
 
+const StyledSkills = styled.ul`
+    font-size: 2.5vmin;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    line-height: normal;
+    margin-top: 2%;
+    @media( max-width: 576px ) {
+        grid-template-columns: auto auto;
+        font-size: 80%;
+        margin: 5%;
+        margin-left: 10%;
+        width: 100%;
+        border: 4px solid lavender;
+    }
+`
+
 export default function About() {
     return(
         <div>
@@ -66,13 +82,18 @@ export default function About() {
                     Hi! I'm Rachel. I'm an undergraduate student at Harvard College concentrating in Statistics.
                 </StyledTitle>
                 <StyledDesc>
-                blippity bloppity bloop whoop poopity scoop insert some bs here woot woot yeah!
+                Co-Founder & Co-President of Group for Undergraduates in Statistics at Harvard (<a href="https://www.harvardgush.org/" target="_blank">GUSH</a>).
                 </StyledDesc>
                 <StyledDesc>
-                Here's where i would list my skills if i had skills woo!
-                </StyledDesc>
-                <StyledDesc>
-                Amazing picture credit to iris su!
+                Recent skills I've been working with:
+                <StyledSkills>
+                    <li>React</li>
+                    <li>JavaScript</li>
+                    <li>R</li>
+                    <li>HTML & CSS</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                </StyledSkills>
                 </StyledDesc>
             </BioContainer>
         </div>
