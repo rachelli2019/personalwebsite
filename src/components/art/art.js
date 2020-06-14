@@ -9,7 +9,11 @@ class Art extends Component {
 
     componentDidMount() {
         window.addEventListener('resize', () => this.handleResize());
-      }
+        // check if in a mobile screen or tablet
+        if (window.innerWidth < 940 && !this.state.smallArt) {
+            this.toggleMenu();
+        }
+    }
 
     componentWillUnmount() {
         window.removeEventListener('resize', () => this.handleResize());
@@ -30,10 +34,6 @@ class Art extends Component {
 
     render() {
         const smallArt = this.state.smallArt;
-        // check if in a mobile screen or tablet
-        if (window.innerWidth < 940 && !this.state.smallArt) {
-            this.toggleMenu();
-        }
 
         if (smallArt) {
             return (

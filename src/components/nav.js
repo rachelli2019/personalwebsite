@@ -10,6 +10,10 @@ class Nav extends Component {
     componentDidMount() {
         window.addEventListener('resize', () => this.handleResize());
         window.addEventListener('scroll', () => this.handleScroll());
+        // check if in a mobile screen
+        if (window.innerWidth < 1200 && !this.state.menuOpen) {
+            this.toggleMenu();
+        }
       }
 
     componentWillUnmount() {
@@ -45,10 +49,6 @@ class Nav extends Component {
 
     render () {
         const menuOpen = this.state.menuOpen;
-        // check if in a mobile screen
-        if (window.innerWidth < 1200 && !this.state.menuOpen) {
-            this.toggleMenu();
-        }
 
         // fade-in transition for hamburger component
         // const burgerFade = {
