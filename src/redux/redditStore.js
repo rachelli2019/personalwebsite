@@ -1,14 +1,14 @@
 import thunkMiddleware from 'redux-thunk'
 import { createLogger } from 'redux-logger'
 import { createStore, applyMiddleware } from'redux'
-import redditReducer from "../redux/reducers"
+import redditReducer from "./reducers/redditReducers"
 
 const loggerMiddleware = createLogger()
 
-export default function redditStore(preloadedState){
+export default function redditStore(){
     return createStore(
         redditReducer,
-        preloadedState,
+        // preloadedState,
         applyMiddleware(
             thunkMiddleware, //lets us dispatch() functions
             loggerMiddleware // middleware that logs actions

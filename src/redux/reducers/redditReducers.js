@@ -71,6 +71,8 @@ const redditReducer = combineReducers({
     selectedSubreddit
 })
 
+export default redditReducer
+
 // store architecture
 // selectedSubreddit: some_name -> stores the current subreddit selected
 // postsBySubreddit: { -> stores the posts that have already been fetched

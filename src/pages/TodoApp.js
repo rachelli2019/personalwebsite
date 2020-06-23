@@ -6,6 +6,8 @@ import "../styles/todoStyles.css";
 import { Provider } from 'react-redux'
 import store from '../redux/store'
 
+console.log(store)
+
 export default function TodoApp() {
   return (
     <Provider store={store}>

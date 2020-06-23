@@ -6,8 +6,8 @@ import {
   fetchPostsIfNeeded,
   invalidateSubreddit
 } from '../redux/actions'
-import Picker from '../components/reddit/picker'
-import Posts from '../components/reddit/posts'
+import Picker from './reddit/picker'
+import Posts from './reddit/posts'
 
 class AsyncApp extends Component {
   constructor(props) {
@@ -18,6 +18,7 @@ class AsyncApp extends Component {
 
   componentDidMount() {
     const { dispatch, selectedSubreddit } = this.props
+    // console.log(selectedSubreddit)
     dispatch(fetchPostsIfNeeded(selectedSubreddit))
   }
 
@@ -42,13 +43,14 @@ class AsyncApp extends Component {
   }
 
   render() {
+    // console.log(this.props)
     const { selectedSubreddit, posts, isFetching, lastUpdated } = this.props
     return (
       <div>
         <Picker
           value={selectedSubreddit}
           onChange={this.handleChange}
-          options={['reactjs', 'frontend']}
+          options={['reactjs', 'frontend', 'beautifuldestinations']}
         />
         <p>
           {lastUpdated && (
@@ -81,10 +83,13 @@ AsyncApp.propTypes = {
 }
 
 function mapStateToProps(state) {
+  // console.log("state")
+  // console.log(state)
   const { selectedSubreddit, postsBySubreddit } = state
   const { isFetching, lastUpdated, items: posts } = postsBySubreddit[
     selectedSubreddit
   ] || {
+    // what does the "or" notation here do?
     isFetching: true,
     items: []
   }
@@ -97,4 +102,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(AsyncApp)
+export default connect(mapStateToProps)(AsyncApp);

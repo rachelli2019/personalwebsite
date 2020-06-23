@@ -1,6 +1,5 @@
-import { ADD_TODO, TOGGLE_TODO, SET_FILTER, REQUEST_POSTS, RECEIVE_POSTS } from "./actionTypes";
+import { ADD_TODO, TOGGLE_TODO, SET_FILTER, REQUEST_POSTS, RECEIVE_POSTS, SELECT_SUBREDDIT,INVALIDATE_SUBREDDIT } from "./actionTypes";
 import fetch from 'cross-fetch'
-import { TRUE } from "node-sass";
 // cross-fetch library to use fetch API to make network requests
 
 let nextTodoId = 0;
@@ -42,10 +41,16 @@ function requestPosts(subreddit) {
 }
 
 function receivePosts(subreddit, json) {
+  let posts = []
+  if (json && json.data && json.data.children) {
+    console.log(json.data)
+    console.log(json.data.children)
+    posts = json.data.children.map(child => child.data)
+  }
   return {
     type: RECEIVE_POSTS,
     subreddit,
-    posts: json.data.children.map(child => child.data),
+    posts: posts,
     receivedAt: Date.now()
   }
 }
@@ -66,9 +71,9 @@ export function fetchPosts(subreddit) {
 
     // In this case, we return a promise to wait for.
 
-    return fetch('https://www.reddit.com/r/${subreddit}.json')
+    return fetch(`https://www.reddit.com/r/${subreddit}.json`)
       .then(
-        response => response.json()
+        response => response.json(),
       )
       .then(json =>
         // can dispatch many times!
