@@ -79,20 +79,22 @@ export default function About() {
             </StyledPic>
             <BioContainer>
                 <StyledTitle>
-                    Hi! I'm Rachel. I'm an undergraduate student at Harvard College concentrating in Statistics.
+                    Hi! I'm Rachel. I'm currently a sophomore at Harvard studying in Computer Science & Statistics.
                 </StyledTitle>
                 <StyledDesc>
-                Co-Founder & Co-President of Group for Undergraduates in Statistics at Harvard (<a href="https://www.harvardgush.org/" target="_blank">GUSH</a>).
+                <p>
+                I'm hungry to learn more and tackle the most difficult challenges.
+                </p>
                 </StyledDesc>
                 <StyledDesc>
                 Recent skills I've been working with:
                 <StyledSkills>
                     <li>React</li>
-                    <li>JavaScript</li>
+                    <li>Javascript</li>
                     <li>R</li>
                     <li>HTML & CSS</li>
                     <li>Python</li>
-                    <li>SQL</li>
+                    <li>SQLAlchemy</li>
                 </StyledSkills>
                 </StyledDesc>
             </BioContainer>

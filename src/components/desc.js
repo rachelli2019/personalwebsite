@@ -64,7 +64,7 @@ export default function Desc() {
             Rachel Li.
             </StyledTitle>
             <StyledSubtitle>
-                I am passionate about using data science to change the world.
+                I am passionate about using technology to change the world.
             </StyledSubtitle>
         </StyledDesc>
     )  

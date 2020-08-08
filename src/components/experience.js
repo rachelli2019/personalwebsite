@@ -25,20 +25,20 @@ export default function Experience() {
     return (
         <div>
         <Timeline>
-      <Event interval={"Current"} title={"Research Intern"} subtitle={"IBM"}>
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-        id est laborum.
+      <Event interval={"Current"} title={"Founder / Co-President"} subtitle={"Group for Undergraduates in Statistics At Harvard (GUSH)"}>
+      Lead the executive team to organize speaker and alumni panel events, educational workshops, social events, and volunteer initiatives for over 100 Harvard undergraduates; organized summer mentorship program pairing 40 first-year students with upperclassmen mentors. Check out our website at <a href="https://www.harvardgush.org/" target="_blank">harvardgush.org</a> for updates on exciting events we have planned!
       </Event>
-      <Event interval={"2019-2020"} title={"Campus Analyst"} subtitle={"Romulus Capital"}>
-      Sourcing and diligence for early stage Seed and Series A startups in B2B enterprise focusing on the application and commercialization of technology with a sector focus in biotechnology.
+      <Event interval={"Current"} title={"Teaching Fellow for Stat 110 (Introduction to Probability)"} subtitle={"Harvard University"}>
+      Lead weekly section and hold office hours for students in Harvard’s intro statistics course.
+      </Event>
+      <Event interval={"Current"} title={"Quantum Software Developer Intern"} subtitle={"IBM Research"}>
+      Designed and implemented front end (React.js, Redux, Bootstrap) and back end (Python, SQLAlchemy,REST) for quantum hardware assembly configuration management; designed database infrastructure for health questionnaire mobile app; completed Qiskit Quantum Computing Summer School for interns and IBM Intern Hackathon.
       </Event>
       <Event interval={"2019-2020"} title={"Analyst"} subtitle={"Harvard College Consulting Group (HCCG)"}>
       Developed a national care-expansion strategy for a Fortune 500 medical devices manufacturer; compiled and analyzed large datasets to evaluate efficiency of service and care nationwide.
+      </Event>
+      <Event interval={"2019-2020"} title={"Campus Analyst"} subtitle={"Romulus Capital"}>
+      Sourcing and diligence for early stage Seed and Series A startups in B2B enterprise focusing on the application and commercialization of technology with a sector focus in biotechnology.
       </Event>
       <Event interval={"2018-2019"} title={"Simons Summer Research Fellow"} subtitle={"Ojima Lab, Stony Brook University"}>
       Conducted tuberculosis drug discovery research;
