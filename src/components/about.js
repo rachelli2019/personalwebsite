@@ -83,7 +83,7 @@ export default function About() {
                 </StyledTitle>
                 <StyledDesc>
                 <p>
-                I'm hungry to learn more and tackle the most difficult challenges.
+                I'm hungry to learn more and tackle the most difficult challenges. In my free time, I love to read, bake cakes and macarons, and go hiking in beautiful places.
                 </p>
                 </StyledDesc>
                 <StyledDesc>
