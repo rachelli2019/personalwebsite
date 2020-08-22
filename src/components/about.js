@@ -14,7 +14,7 @@ const BioContainer = styled.div`
         margin: 1rem auto; 
         margin-top: 0;
         padding: 0 0.3rem;
-  }
+    }
 `; 
 
 const StyledTitle = styled.p`

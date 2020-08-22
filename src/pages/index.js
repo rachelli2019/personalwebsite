@@ -7,6 +7,7 @@ import Experience from "../components/experience"
 import Contact from "../components/contact"
 import { Helmet } from "react-helmet"
 import Footer from "../components/footer"
+import Projects from "../components/projects/projects"
 
 export default function Home() {
   return (
@@ -25,6 +26,11 @@ export default function Home() {
         title="EXPERIENCE"
         id="experience"
         children={<Experience/>}
+      />
+      <Section
+        title="PROJECTS"
+        id="projects"
+        children={<Projects/>}
       />
       <Section
         title="CONTACT"
