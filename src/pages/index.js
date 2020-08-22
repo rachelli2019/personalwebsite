@@ -7,7 +7,7 @@ import Experience from "../components/experience"
 import Contact from "../components/contact"
 import { Helmet } from "react-helmet"
 import Footer from "../components/footer"
-import Projects from "../components/projects/projects"
+import Projects from "../components/projects"
 
 export default function Home() {
   return (
