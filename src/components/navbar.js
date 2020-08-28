@@ -25,6 +25,7 @@ export default function NavBar({ children }) {
             <ul className="navRight">
                 <ListLink to="about">ABOUT</ListLink>
                 <ListLink to="experience">EXPERIENCE</ListLink>
+                <ListLink to="projects">PROJECTS</ListLink>
                 <ListLink to="contact">CONTACT</ListLink>
                 <a href="resume.pdf" target="_blank" className="navText"
                         style={{fontSize:'24px', fontFamily:'Varela Round', fontWeight:'lighter'}}>RESUME</a>
