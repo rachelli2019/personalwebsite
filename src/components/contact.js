@@ -21,7 +21,7 @@ const StyledIconContainer = styled.div`
     @media(max-width: 576px) {
         margin: 2em auto;
         padding-left: 15%;
-        border: 4px solid lavender;
+        ${'' /* border: 4px solid lavender; */}
     }
     @media(max-width: 376px) {
         padding-left: 23%;

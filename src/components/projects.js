@@ -4,7 +4,8 @@ import "./projects.css"
     
 export default function Projects() {
     return(
-      <Carousel style={{width: '80%', margin: '3% auto'}}>
+      <div>
+      <Carousel className="container">
         <Carousel.Item id='item'>
           <a href="https://tech4blm.netlify.app/" target="_blank">
           <img
@@ -47,5 +48,6 @@ export default function Projects() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      </div>
     )  
 }

@@ -25,6 +25,9 @@ const Menu = ({ open }) => {
       <MenuLink to="experience">
         Experience
         </MenuLink>
+        <MenuLink to="projects">
+        Projects
+        </MenuLink>
       <MenuLink to="contact">
         Contact
         </MenuLink>

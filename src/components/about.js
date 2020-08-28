@@ -67,7 +67,7 @@ const StyledSkills = styled.ul`
         margin: 5%;
         margin-left: 10%;
         width: 100%;
-        border: 4px solid lavender;
+        ${'' /* border: 4px solid lavender; */}
     }
 `
 
@@ -87,7 +87,7 @@ export default function About() {
                 </p>
                 </StyledDesc>
                 <StyledDesc>
-                Recent skills I've been working with:
+                <p>Recent skills I've been working with:</p>
                 <StyledSkills>
                     <li>React</li>
                     <li>Javascript</li>
