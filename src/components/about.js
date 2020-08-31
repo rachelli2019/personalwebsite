@@ -87,7 +87,8 @@ export default function About() {
                 </p>
                 </StyledDesc>
                 <StyledDesc>
-                <p>Recent skills I've been working with:</p>
+                <p> Recent skills I've been working with:</p>
+                </StyledDesc>
                 <StyledSkills>
                     <li>React</li>
                     <li>Javascript</li>
