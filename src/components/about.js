@@ -97,7 +97,6 @@ export default function About() {
                     <li>Python</li>
                     <li>SQLAlchemy</li>
                 </StyledSkills>
-                </StyledDesc>
             </BioContainer>
         </div>
     )  
